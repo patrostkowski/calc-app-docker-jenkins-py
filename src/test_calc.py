@@ -15,6 +15,9 @@ def test_add3():
 def test_subtract1():
     assert subtract(2,2) == 0
 
+def test_subtract3():
+    assert subtract(10,10) == 0
+
 def test_subtract2():
     assert subtract(1,-1) == 2
 
