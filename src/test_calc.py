@@ -9,7 +9,7 @@ def test_add1():
 def test_add2():
     assert add(-1,1) == 0
 
-def test_subtract(1):
+def test_subtract1():
     assert subtract(2,2) == 0
 
 def test_subtract2():
