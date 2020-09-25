@@ -8,8 +8,10 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''pytest
-exit $?'''
+        sh '''
+	pytest
+	exit $?
+	'''
       }
     }
 
