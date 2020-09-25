@@ -13,7 +13,7 @@ def test_multiply1():
     assert multiply(2,0) == 0
 
 def test_divide1():
-    assert divide(2,1) == 2
+    assert divide(2,0) == 2
 
 def test_power1():
     assert power(2,2) == 4
