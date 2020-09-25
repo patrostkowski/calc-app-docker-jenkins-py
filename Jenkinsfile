@@ -13,9 +13,11 @@ pipeline {
       }
     }
 
-    stage('Finished') {
+    stage('Build') {
       steps {
-        echo 'Finished'
+        sh '''mkdir calc && 
+pyinstaller /code/calc.py &&
+ls -la calc'''
       }
     }
 
