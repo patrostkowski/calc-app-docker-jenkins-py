@@ -9,6 +9,7 @@ pipeline {
     stage('Install') {
       steps {
 <<<<<<< HEAD
+<<<<<<< HEAD
         sh '''
 	pytest
 	exit $?
@@ -17,6 +18,10 @@ pipeline {
         echo 'Installing libs...'
         sh 'pip3 install -r requirements.txt'
 >>>>>>> cabd5024ee576b476acf0634d02fea843137b2e0
+=======
+        sh '''pytest
+exit $?'''
+>>>>>>> parent of fa5d6fe... removed echo from Test sh
       }
     }
 
