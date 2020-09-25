@@ -15,7 +15,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''mkdir calc && 
+        sh '''mkdir calc &&
+cd calc/ && 
 pyinstaller --onefile /code/calc.py &&
 ls -la calc/'''
       }
