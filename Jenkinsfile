@@ -17,8 +17,7 @@ pipeline {
       steps {
         sh '''mkdir calc &&
 cd calc/ && 
-pyinstaller --onefile /code/calc.py &&
-ls -la calc/'''
+pyinstaller --onefile /code/calc.py &&'''
       }
     }
 
