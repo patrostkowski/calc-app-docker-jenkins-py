@@ -9,8 +9,7 @@ pipeline {
     stage('Install') {
       steps {
         echo 'Installing libs...'
-        sh '''pip3 install numpy:1.19.2
-pip3 install pytest:6.0.2'''
+        sh 'pip3 install -r requirements.txt'
       }
     }
 
