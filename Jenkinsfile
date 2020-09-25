@@ -9,7 +9,7 @@ pipeline {
     stage('Tests') {
       steps {
         echo 'Unit tests begin...'
-        sh 'pytest -v test_calc.py'
+        sh 'pytest -v'
       }
     }
 
