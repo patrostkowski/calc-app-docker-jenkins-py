@@ -4,6 +4,8 @@ import sys
 import numpy as np
 # Program make a simple calculator
 
+dd = 0
+
 # This function adds two numbers
 def add(x, y):
 	return x + y
