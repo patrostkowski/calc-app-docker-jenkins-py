@@ -1,11 +1,14 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-
   }
   stages {
+    stage('Build') {
+      steps {
+        agent {
+          dockerfile {
+            filename 'Dockerfile'
+    }
+      }
+    }
     stage('Tests') {
       steps {
         echo 'Unit tests begin...'
@@ -13,7 +16,7 @@ pipeline {
       }
     }
 
-    stage('Build') {
+    stage('Merge') {
       steps {
         echo 'Build begin'
       }
