@@ -27,7 +27,7 @@ pipeline {
   }
   post {
     always {
-      sh './merge_branches.sh'
+      echo 'all good'
     }
     failure {
       echo 'something went wrong'
