@@ -25,4 +25,12 @@ pipeline {
     }
 
   }
+  post {
+    always {
+      sh './merge_branches.sh'
+    }
+    failure {
+      echo 'something went wrong'
+    }
+  }
 }
