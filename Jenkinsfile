@@ -1,15 +1,18 @@
 pipeline {
+  agent {
+    dockerfile {
+      filename 'Dockerfile'
+    }
+
   }
   stages {
     stage('Build') {
       steps {
-        agent {
-          dockerfile {
-            filename 'Dockerfile'
+        echo 'Build complete. Starting tests'
     }
       }
     }
-    stage('Tests') {
+    stage('Test') {
       steps {
         echo 'Unit tests begin...'
         sh 'pytest -v'
@@ -18,7 +21,7 @@ pipeline {
 
     stage('Merge') {
       steps {
-        echo 'Build begin'
+        echo 'Merged to master'
       }
     }
 
