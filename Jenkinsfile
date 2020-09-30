@@ -23,14 +23,5 @@ pipeline {
         echo 'Merged to master'
       }
     }
-
-  }
-  post {
-    always {
-      echo 'all good'
-    }
-    failure {
-      echo 'something went wrong'
-    }
   }
 }
