@@ -8,3 +8,5 @@ RUN pip install -r requirements.txt
 
 COPY /src .
 
+RUN python -m py_compile /code/src/calc.py
+
