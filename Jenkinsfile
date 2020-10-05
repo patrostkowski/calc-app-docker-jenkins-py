@@ -6,18 +6,22 @@ pipeline {
 
   }
   stages {
-    stage('Tests') {
+    stage('Build') {
+      steps {
+        echo 'Building app'
+      }
+    }
+    stage('Test') {
       steps {
         echo 'Unit tests begin...'
         sh 'pytest -v'
       }
     }
 
-    stage('Build') {
+    stage('Merge') {
       steps {
-        sh 'pyinstaller --onefile /code/calc.py'
+        echo 'Merged to master'
       }
     }
-
   }
 }

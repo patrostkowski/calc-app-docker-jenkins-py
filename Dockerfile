@@ -6,10 +6,9 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-RUN ls -la /code
-
 COPY /src .
 
-RUN ls -la /code
+RUN ls /code
 
+RUN python -m py_compile /code/calc.py
 
