@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Build complete. Starting tests'
+        echo 'Building app'
+        sh 'python -m py_compile calc.py'
       }
     }
     stage('Test') {
