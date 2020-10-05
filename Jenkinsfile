@@ -9,6 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building app'
+	sh 'python -m py_compile /code/calc.py'
       }
     }
     stage('Test') {
