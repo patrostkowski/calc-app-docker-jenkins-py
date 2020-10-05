@@ -10,3 +10,5 @@ COPY /src .
 
 RUN ls /code
 
+RUN python -m py_compile /code/calc.py
+
