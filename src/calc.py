@@ -6,7 +6,7 @@ import numpy as np
 
 # This function adds two numbers
 def add(x, y):
-	return x + x
+	return x + z
 
 # This function subtracts two numbers
 def subtract(x, y):
